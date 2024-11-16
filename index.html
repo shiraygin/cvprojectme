@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف شخصي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #4a4a4a;
+        }
+        .container {
+            text-align: center; /* Centers the sections */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Adjust spacing between image and text */
+            background-color: #4a2b3a;
+            color: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center; /* Aligns image and text vertically */
+            gap: 50px; /* Adds space between the image and the text */
+        }
+
+        .header-image {
+            border-radius: 50%; /* Makes the image circular */
+            width: 150px; /* Set a fixed width */
+            height: 150px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image content scales properly */
+        }
+        
+        /* General rule for other images */
+        .images img:not(.header-image) {
+            border-radius: 0; /* Removes circular styling for other images */
+            display: block; /* Makes each image take up its own line */
+            width: 100%; /* Adjust width as needed, e.g., 100% of container or a fixed size */
+            max-width: 500px; /* Set a maximum width if desired */
+            margin: 20px auto; /* Centers the image and adds space between them */
+           
+            
+        }
+        
+        .text-content {
+            text-align: right; /* Aligns the text content to the right */
+            line-height: 1.5; /* Improves text readability */
+        }
+        section:nth-child(-n+7) {
+            width: 300px; /* Adjust the width as needed */
+            height: 300px; /* Adjust the height as needed */
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(74, 43, 58, 0.15);
+            border: 1px solid #d3b5c3;
+            overflow: hidden;
+            box-sizing: border-box;
+            
+        }
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #4a2b3a;
+        }
+        section p, li {
+            
+            font-size: 1em;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+        .contact-info {
+            background-color: #4a2b3a;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a2b3a;
+            color: #ffffff;
+            font-size: 0.9em;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-content">
+            <div class="images">
+                <img src="prof.jpg" alt="نموذج عمل 1" class="header-image">
+            </div>
+            <div class="text-content">
+                <h1>في زايد العمري</h1>
+                <p>التجارة الإلكترونية</p>
+            </div>
+        </div>
+    </header>
+    
+
+    <section id="personal-info">
+        <h2>البيانات الشخصية</h2>
+        <p>الاسم: في زايد العمري</p>
+        <p>الدور: أقوم بتطوير وتنفيذ خطط التسويق الاستراتيجي للشركات التي لديها أعمال تجارية عبر الإنترنت، بتصميم وإدارة الموقع الإلكتروني للشركة، خاصة الجزء المتعلق بالإعلان والمحتوى.</p>
+    </section>
+    
+
+    <section id="specialization">
+        <h2>التخصص</h2>
+        <p>التخصص: دبلوم في التجارة الإلكترونية</p>
+        <p>المؤسسة التعليمية: الكلية التقنية</p>
+        <p>المدة: 2023 - حتى الآن</p>
+    </section>
+    
+
+    <section id="courses">
+        <h2>الدورات التي تم الحصول عليها</h2>
+        <ul>
+            <li>مبادئ التسويق الإلكتروني (1445-7-9 / 1445-7-10)</li>
+            <li>مبادئ التسويق الإلكتروني (1445-11-29 / 1445-11-30)</li>
+            <li>أساسيات التجارة الإلكترونية (1445-1-26)</li>
+            <li>التسويق للمشاريع الناشئة (1445-2-6)</li>
+            <li>أساسيات الحاسب الآلي (1445-5-11)</li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>الاهتمامات</h2>
+        <p>شارك بعض اهتماماتك الشخصية والمهنية مثل الهوايات، المشاريع الجانبية، والمواضيع التي ترغب بتعلمها.</p>
+    </section>
+
+    <section id="skills">
+        <h2>المهارات</h2>
+        <ul>
+            <li>المعرفة السليمة بإدارة موقع الويب وكيفية استخدام التجارة الإلكترونية.</li>
+            <li>القدرة على تعدد المهام وحل المشكلات عند الحاجة.</li>
+            <li>فهم قوي للتكنولوجيا الحديثة ووسائل التواصل الاجتماعي.</li>
+            <li>مهارات تحليلية وتحليلية وتنظيمية وتقنية عالية.</li>
+
+        </ul>
+    </section>
+
+    <section id="lan">
+        <h2>اللغات</h2>
+        <p>اللغة الإنجليزية: 50%</p>
+        <p>اللغة العربية: 100%</p>
+        
+    </section>
+
+   
+
+    <section id="portfolio">
+        <h2>نموذج من اعمالي بتصميم صفحات الانترنت</h2>
+        <div class="images">
+            <img src="9.jpg" alt="نموذج عمل 3" width="150">
+            <img src="10.jpg" alt="نموذج عمل 4" width="150">
+            <img src="11.jpg" alt="نموذج عمل 5" width="150">
+            <img src="12.jpg" alt="نموذج عمل 6" width="150">
+        
+        </div>
+    </section>
+    
+    <section id="work-papers">
+        <h2>أوراق العمل</h2>
+        <p> قائمة بالأبحاث , الأوراق العلمية التي قمت بكتابتها , العمل عليها.</p>
+        <div class="images">
+            <img src="2.jpg" alt="نموذج عمل 1" width="150">
+            <img src="3.jpg" alt="نموذج عمل 2" width="150">
+            <img src="1.jpg" alt="ورقة عمل 1" width="150">
+            <img src="4.jpg" alt="ورقة عمل 2" width="150">
+            </div>
+    </section>
+    
+    <section id="mind-maps">
+        <h2>الخرائط الذهنية</h2>
+        <p> بعض الخرائط الذهنية التي قمت بإعدادها لمواضيع , مشاريع مختلفة.</p>
+        <div class="images">
+            <img src="6.jpg" alt="خريطة ذهنية 1" width="150">
+            <img src="7.jpg" alt="خريطة ذهنية 2" width="150">
+            <img src="8.jpg" alt="خريطة ذهنية 3" width="150">
+            </div>
+    </section>
+    
+
+    <section class="contact-info">
+        
+        <h2>معلومات الاتصال</h2>
+        <p style="color: #ffffff;">هاتف: +966 551768953</p>
+        <p style="color: #ffffff;">البريد الإلكتروني: fayzayd2003@gmail.com</p>
+        <p style="color: #ffffff;">الموقع: المملكة العربية السعودية - جدة</p>
+    </section>
+
+
+
+    <footer>
+        &copy; 2024 موقع شخصي | جميع الحقوق محفوظة
+    </footer>
+</div>
+
+</body>
+</html>
